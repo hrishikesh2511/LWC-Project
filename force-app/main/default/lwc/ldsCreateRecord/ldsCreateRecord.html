@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="LDS Create Record" icon-name="standard:record">
+        <div class="slds-m-around_small">
+            <lightning-input label="Id" disabled value={accountId}></lightning-input>
+            <lightning-input label="Name"  onchange={handleChange}></lightning-input>
+            <br/>
+            <lightning-button label="Create Account" onclick={createAccount} variant="brand"></lightning-button>
+
+        </div>
+
+    </lightning-card>
+</template>

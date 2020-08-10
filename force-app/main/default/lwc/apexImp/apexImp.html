@@ -1,0 +1,20 @@
+<template>
+    <lightning-card title="Apex Imperative" icon-name="standard:case">
+        <div class="slds-m-around_small">
+            <lightning-input value={subject}
+                            label="Search Cases"
+                            onchange={handleChange}>
+            </lightning-input>  
+            <lightning-button label="Load Cases" onclick={handleLoad}></lightning-button>
+        </div>
+        <div class="slds-m-around_small">
+                <template for:each={records} for:item="item">
+                    <p key={item.Id}>
+                        {item.Subject}<br/>
+                        {item.Status}
+                    </p>
+                </template>
+        </div>    
+    </lightning-card>
+    
+</template>

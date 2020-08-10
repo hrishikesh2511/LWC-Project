@@ -1,0 +1,14 @@
+<template>
+    <div class="slds-m-around_small" onsimple={handleSimpleEvents}>
+        <strong>I am inside Parent Comp</strong>
+        <br/>
+        <c-child-comp  message="Message from Child"
+        pageno="3"></c-child-comp><!--As component name is childComp it will break camel case-->
+        <br/>
+    </div>
+
+    <div class="slds-m-around_small">
+        <lightning-button label="Change Date" onclick={handleClick} variant="brand"></lightning-button>
+
+    </div>
+</template>

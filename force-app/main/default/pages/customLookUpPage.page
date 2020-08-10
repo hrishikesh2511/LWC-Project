@@ -1,0 +1,23 @@
+<apex:page>
+    <apex:slds/>
+    <apex:includeLightning/>
+    <div id="container"></div><!--DOM-->
+    <script>
+        $Lightning.use('c:LWCApp',function(){//Name of the application ==>namespace:appName
+            $Lightning.createComponent(
+                'c:customLookup',//name of the component ==> namespace:componentName
+                {
+                     objectApiName:"Case", //key:value
+                     fieldApiName:"Subject",
+                     iconname:"standard:case"   
+                },
+                'container',//Id of our div tag
+                function(cmp){
+                    console.log('Component Created');
+                }
+
+            )
+        });
+    </script>
+
+</apex:page>

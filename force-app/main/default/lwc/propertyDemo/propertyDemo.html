@@ -1,0 +1,22 @@
+<template>
+    <lightning-card title="Property Demo" icon-name="custom:custom54">
+        <div class="slds-m-around_small">
+            <lightning-input value={message} 
+                label="Private Property"
+                placeholder="Non-Reactive Property"
+                onchange={handleChange}
+            ></lightning-input>
+            <div class="slds-m-around_small">
+                message is : {message}
+            </div>
+
+            <div class="slds-m-around_small">
+                name is : {name}
+            </div>
+
+            <div class="slds-m-around_small">
+                changedMessage is : {changedMessage}
+            </div>
+        </div>
+    </lightning-card>
+</template>

@@ -1,0 +1,32 @@
+{
+  "orgName": "Hrishi LWC",
+  "edition": "Enterprise",
+  "features": [
+          "Communities",
+          "MultiCurrency",
+          "ContactsToMultipleAccounts",
+          "CascadeDelete",
+          "PersonAccounts",
+          "PardotScFeaturesCampaignInfluence",
+          "StateAndCountryPicklist",
+          "Entitlements",
+          "LiveAgent"
+  ],
+  "settings": {
+    "lightningExperienceSettings": {
+        "enableS1DesktopEnabled": true
+    },
+    "orgPreferenceSettings": {
+        "networksEnabled":true,
+        "s1DesktopEnabled":true
+
+    },
+    "omniChannelSettings": {
+        "enableOmniChannel":true
+
+    },
+    "mobileSettings": {
+        "enableS1EncryptedStoragePref2": false
+    }
+  }
+}
