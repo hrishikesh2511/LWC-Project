@@ -4,7 +4,7 @@ export default class BeerList extends LightningElement {
 
     @track beerRecords;
     @track errors;
-
+//test git changes
     @wire(searchBeer)
         wiredRecords({error,data}){
             console.log('Data',data);
