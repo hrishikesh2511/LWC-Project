@@ -1,4 +1,5 @@
 public with sharing class BeerController {
+    //Constructor of the Class
     public BeerController() {
 
     }
